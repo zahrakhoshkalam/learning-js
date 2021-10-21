@@ -5,10 +5,16 @@
     <title>JS Learning</title>
   </head>
   <body>
-    <p>My First Paragraph.</p>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">
+      The time is?
+    </button>
     <p id="demo"></p>
-    <button onclick="window.print()">Print this page</button>
-
+    <br />
+    <br />
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+    <br />
+    <br />
+    <button onclick="displayDate()">The time is?</button>
     <script src="./myScript.js"></script>
   </body>
 </html>
